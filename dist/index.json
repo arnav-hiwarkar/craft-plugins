@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "serial": 1,
+  "issued": 1794526102,
+  "expires": 1797118102,
+  "vendors": [
+    {
+      "login": "arnav-hiwarkar",
+      "github_id": 127113054,
+      "name": "Arnav Hiwarkar",
+      "tier": "official",
+      "url": "https://getartcraft.com"
+    }
+  ],
+  "packages": [
+    {
+      "id": "io.github.arnav-hiwarkar.film-looks",
+      "name": "Film looks",
+      "summary": "A warm film LUT and halftone print presets (data only, no code)",
+      "vendor": "arnav-hiwarkar",
+      "repo": "https://github.com/arnav-hiwarkar/film-looks",
+      "stars": 0,
+      "tags": [
+        "film",
+        "lut",
+        "presets"
+      ],
+      "kinds": [
+        "preset",
+        "lut"
+      ],
+      "apps": [
+        "effectcraft",
+        "photocraft"
+      ],
+      "native": false,
+      "license": "MIT OR Apache-2.0",
+      "latest": "1.0.0",
+      "updated": "2026-11-13",
+      "file_sha256": "38c43ef36f747ba3e5185455d7c58d9134c4921c65031053a6afb00e360485fb",
+      "file_size": 2180,
+      "stars_date": ""
+    }
+  ],
+  "revocations": []
+}

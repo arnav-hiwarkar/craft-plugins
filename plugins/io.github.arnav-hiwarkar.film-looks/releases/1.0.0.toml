@@ -19,7 +19,7 @@ source = "https://github.com/arnav-hiwarkar/film-looks"
 summary = "A warm film LUT and halftone print presets (data only, no code)"
 apps = ["effectcraft", "photocraft"]
 
-[manifestrequires]
+[manifest.requires]
 "io.github.arnav-hiwarkar.halftone" = "^1.0"
 
 [[manifest.contribution]]

@@ -53,7 +53,6 @@ and shown with their date.
 
 ## Example entries
 
-The catalogue includes three examples from `craft-extensions/examples`: Halftone and Color notes
-show wasm plugin entries, while Film looks demonstrates a data-only release with a packaged LUT and
-presets. The wasm release records are intentional placeholders until their authors build and publish.
-
+Only Film looks is publishable in this beta snapshot, demonstrating a data-only release with a
+packaged LUT and presets. Halftone and Color notes are pending wasm examples in `examples/pending/`,
+excluded from catalogue builds until their real assets are released.

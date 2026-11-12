@@ -20,7 +20,7 @@ source = "https://github.com/arnav-hiwarkar/color-notes"
 summary = "A panel that lists the selected layers and adds note markers"
 apps = ["effectcraft"]
 
-[manifestwhy]
+[manifest.why]
 "document.edit:document" = "Adds a note marker to the document when you press the button"
 
 [[manifest.contribution]]
