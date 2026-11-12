@@ -1,0 +1,5 @@
+id = "io.github.arnav-hiwarkar.color-notes"
+vendor = "arnav-hiwarkar"
+repo = "https://github.com/arnav-hiwarkar/color-notes"
+repo_id = 0 # set when the repo is published
+tags = ["notes", "panel", "color"]

@@ -1,0 +1,50 @@
+# EXAMPLE: placeholder digest until the author builds and releases; `catalogue check` fails on purpose
+version = "1.0.0"
+tag = "v1.0.0"
+commit = "0000000000000000000000000000000000000000" # set to the release commit
+published = "2026-11-13"
+
+[[assets]]
+url = "https://github.com/arnav-hiwarkar/halftone/releases/download/v1.0.0/io.github.arnav-hiwarkar.halftone-1.0.0.craftplugin"
+sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
+size = 0
+
+
+[manifest]
+schema = 2
+id = "io.github.arnav-hiwarkar.halftone"
+name = "Halftone"
+version = "1.0.0"
+license = "MIT OR Apache-2.0"
+source = "https://github.com/arnav-hiwarkar/halftone"
+summary = "Round halftone dots on a rotated grid, sized by local darkness"
+apps = ["effectcraft", "photocraft", "figcraft"]
+
+[[manifest.contribution]]
+id = "halftone"
+kind = "effect"
+contract = "raster.filter@1.0"
+label = "Halftone"
+category = "Stylize"
+module = "halftone.wasm"
+permissions = []
+
+[[manifest.contribution.param]]
+id = "size"
+label = "Dot size"
+type = "slider"
+default = 8
+min = 2
+max = 64
+
+[[manifest.contribution.param]]
+id = "angle"
+label = "Grid angle"
+type = "angle"
+default = 45
+
+[[manifest.contribution.param]]
+id = "mono"
+label = "Black and white"
+type = "checkbox"
+default = true

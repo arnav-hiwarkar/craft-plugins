@@ -1,0 +1,5 @@
+id = "io.github.arnav-hiwarkar.film-looks"
+vendor = "arnav-hiwarkar"
+repo = "https://github.com/arnav-hiwarkar/film-looks"
+repo_id = 0 # set when the repo is published
+tags = ["film", "lut", "presets"]

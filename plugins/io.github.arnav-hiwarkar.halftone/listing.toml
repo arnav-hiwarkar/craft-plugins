@@ -1,0 +1,5 @@
+id = "io.github.arnav-hiwarkar.halftone"
+vendor = "arnav-hiwarkar"
+repo = "https://github.com/arnav-hiwarkar/halftone"
+repo_id = 0 # set when the repo is published
+tags = ["effect", "stylize", "halftone"]

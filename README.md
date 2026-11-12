@@ -50,3 +50,10 @@ dist/                                  built and signed by a maintainer: index.j
 Apps fetch `dist/index.json`, verify its ed25519 signature with the key built into the app, and then
 fetch per-package files whose hashes the signed index lists. GitHub stars are fetched at build time
 and shown with their date.
+
+## Example entries
+
+The catalogue includes three examples from `craft-extensions/examples`: Halftone and Color notes
+show wasm plugin entries, while Film looks demonstrates a data-only release with a packaged LUT and
+presets. The wasm release records are intentional placeholders until their authors build and publish.
+
