@@ -1,0 +1,8 @@
+# The kill list. Each entry targets an id (with optional version range), a digest, or a vendor.
+# severity: advisory | block-new | disable
+# [[revocation]]
+# id = "io.github.someone.bad"
+# versions = "^1"
+# severity = "disable"
+# reason = "Uploads documents without asking"
+# date = "2026-11-12"

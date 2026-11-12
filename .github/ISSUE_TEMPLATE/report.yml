@@ -1,0 +1,21 @@
+name: Report plugin
+description: Report a plugin that is harmful, deceptive, broken in a dangerous way, paid, or breaks the rules
+labels: ["report"]
+body:
+  - type: input
+    id: plugin
+    attributes: { label: Plugin id, placeholder: io.github.someone.plugin }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: Version }
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options: [malware or security problem, deceptive or impersonation, paid or monetised, licence or source problem, other]
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: What happened? }
+    validations: { required: true }
