@@ -1,0 +1,5 @@
+id = "io.github.arnav-hiwarkar.figcraft-shapes"
+vendor = "arnav-hiwarkar"
+repo = "https://github.com/arnav-hiwarkar/figcraft-shapes"
+repo_id = 0 # set when the repo is published
+tags = ["shapes", "tool", "panel"]

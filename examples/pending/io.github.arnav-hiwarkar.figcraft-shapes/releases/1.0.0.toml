@@ -1,0 +1,52 @@
+# EXAMPLE: digest and size are from the local debug build in craft-extensions/examples/figcraft-shapes
+# (also used by the local test catalogue; see craft-extensions docs/plugins/testing.md). Replace them, the commit and the URL after the GitHub release.
+version = "1.0.0"
+tag = "v1.0.0"
+commit = "0000000000000000000000000000000000000000" # set to the release commit
+published = "2026-11-13"
+
+[[assets]]
+url = "https://github.com/arnav-hiwarkar/figcraft-shapes/releases/download/v1.0.0/io.github.arnav-hiwarkar.figcraft-shapes-1.0.0.craftplugin"
+sha256 = "580e2d15ef6bd76fed541a3c51b3fa3fdd295552c3deee082237bcb2a8cb5225"
+size = 3990196
+
+
+[manifest]
+schema = 2
+id = "io.github.arnav-hiwarkar.figcraft-shapes"
+name = "Shapes"
+version = "1.0.0"
+license = "MIT OR Apache-2.0"
+source = "https://github.com/arnav-hiwarkar/figcraft-shapes"
+summary = "A shapes panel, a command that adds a row of shapes, and a drag-to-draw rectangle tool"
+apps = ["figcraft"]
+
+[manifest.why]
+"document.edit:document" = "Creates the shapes you ask for as ordinary layers"
+"app.events" = "Shows the latest selection or page change in the panel"
+
+[[manifest.contribution]]
+id = "shapes"
+kind = "panel"
+contract = "figcraft.session@1.0"
+label = "Shapes"
+module = "figcraft_shapes.wasm"
+permissions = ["document.edit:document"]
+optional_permissions = ["app.events"]
+
+[[manifest.contribution]]
+id = "create-shapes"
+kind = "command"
+contract = "figcraft.session@1.0"
+label = "Create shapes"
+category = "Shapes"
+module = "figcraft_shapes.wasm"
+permissions = ["document.edit:document"]
+
+[[manifest.contribution]]
+id = "draw-rect"
+kind = "tool"
+contract = "figcraft.session@1.0"
+label = "Draw rectangle"
+module = "figcraft_shapes.wasm"
+permissions = ["document.edit:document"]
