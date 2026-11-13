@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "serial": 1,
-  "issued": 1794526102,
-  "expires": 1797118102,
+  "serial": 2,
+  "issued": 1794543950,
+  "expires": 1797135950,
   "vendors": [
     {
       "login": "arnav-hiwarkar",
@@ -35,10 +35,10 @@
       ],
       "native": false,
       "license": "MIT OR Apache-2.0",
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "updated": "2026-11-13",
-      "file_sha256": "38c43ef36f747ba3e5185455d7c58d9134c4921c65031053a6afb00e360485fb",
-      "file_size": 2180,
+      "file_sha256": "2770aad52358e5a1f253f9a0f3a6eac45e1891f7e8a0c6c3baea57a20dad3db6",
+      "file_size": 4146,
       "stars_date": ""
     }
   ],
