@@ -34,6 +34,6 @@ No bot and no CI. One maintainer handles each PR:
 
 ## Keys
 
-`craft-ext catalogue keygen --out <file>` creates a key and prints the public half for
+`craft-ext catalogue keygen --repo <dir> --out <file>` creates a key and prints the public half for
 `craft_ext_core::catalogue::TRUSTED_KEYS`. Apps hold two key slots so a replacement can ship before the
 old key is retired. If a key leaks, ship an app update with only the new key, then re-sign.
