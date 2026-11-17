@@ -37,9 +37,36 @@ id = "io.github.you.my-effect"
 vendor = "you"
 repo = "https://github.com/you/my-effect"
 repo_id = 87654321          # https://api.github.com/repos/<owner>/<repo> → "id"
-tags = ["stylize"]
+tags = ["stylize"]          # at most 10
+summary = "One line people see in search"          # optional, at most 140 characters
+categories = ["effects"]    # optional, at most 2 from the per-app list in craft-extensions docs
+homepage = "https://you.example/my-effect"         # optional
+icon = "media/icon.png"     # optional: square PNG in plugins/<id>/media/, at most 256 KiB
+screenshots = ["media/before-after.png"]           # optional: up to 6 PNGs, each at most 2 MiB
+signer_workflow = "you/my-effect/.github/workflows/release.yml"   # optional: earns "Built from source"
 ```
 
-and the generated `plugins/<id>/releases/<version>.toml`. Run `craft-ext catalogue check --only <id>`
-yourself first. One maintainer reviews the checklist output and merges. Your release appears in apps
-after the next signed build.
+Add the generated `plugins/<id>/releases/<version>.toml`, with an optional `changelog` (at most 4 KiB).
+
+Before opening the pull request, run both checks yourself:
+
+```sh
+craft-ext catalogue check --only <id>
+craft-ext catalogue check-submission --repo . --id <id>
+```
+
+`check-submission` runs every automated check and prints one verdict:
+
+- **Schema and limits.**
+- **Lookalike names** of listed plugins.
+- **Wider permissions** than your previous release.
+- **Source repository and an immutable GitHub release.**
+- **Build attestation**, when you name a `signer_workflow` and publish with
+  `actions/attest-build-provenance`.
+
+A check that cannot run fails; it is never skipped. Wider permissions and lookalike names mark the
+submission `needs-review`. Everything else is merged without manual review. Your release appears in
+apps after the next signed build.
+
+Maintainers curate `featured.toml` (`ids = [...]`, at most 24). Featuring is never requested in a
+pull request.
